@@ -1,0 +1,12 @@
+name: VCP-Source-cvsbk
+version: 0.10
+abstract: VCP source driver for bk exported cvs
+author: Chia-liang Kao <clkao@clkao.org>
+license: perl
+distribution_type: module
+requires:
+  VCP: 0.9
+no_index:
+  directory:
+    - inc
+generated_by: Module::Install version 0.35

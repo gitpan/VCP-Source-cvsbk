@@ -1,0 +1,42 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.41.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It would check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 66cbc1f6102a96d33a96739787af247c9b05ce07 CHANGES
+SHA1 033ecda763574a5db5d08a44d42ccf38c9442958 MANIFEST
+SHA1 a49536f06f9472c856d8b7987dea1e6687c643c9 META.yml
+SHA1 aed698dee4dce75f9118d65aaad63ddfc92847de Makefile.PL
+SHA1 1951799b0dbfa6cced1484d33f550c57eb974888 README
+SHA1 127fb0a41f8433b854676941c699693abc3e85d4 inc/ExtUtils/AutoInstall.pm
+SHA1 02597776ad22aacd2c8e189594fcbf701390b606 inc/Module/Install.pm
+SHA1 53422ed14b41bbc9af3ac14a26ced3ed21dee0bc inc/Module/Install/AutoInstall.pm
+SHA1 7ca8b8f54287c2b5af8062fc9f349275a07e06f3 inc/Module/Install/Base.pm
+SHA1 b6af22816210f8eaab4c2c616e05a8892b2fcfd0 inc/Module/Install/Can.pm
+SHA1 33659c004518e95afb6ffafad41e84f2a6268412 inc/Module/Install/Fetch.pm
+SHA1 b42b4d3a89848325ae29422c72638e1571e7af1b inc/Module/Install/Include.pm
+SHA1 c4ed10cd20914c04f3fff3f8aaf8943372cec114 inc/Module/Install/Makefile.pm
+SHA1 ccf9b6267b5c9e7b35ef129f7e974255955c8867 inc/Module/Install/Metadata.pm
+SHA1 1288f4c4e4ba88e19194d7952eacbd6be2a5b916 inc/Module/Install/Win32.pm
+SHA1 1022a7ab797fc0081ea947f102650362ad925d7a inc/Module/Install/WriteAll.pm
+SHA1 17c8886c95e4998ede8d3cd9493e447783024268 lib/VCP/Filter/cvsbkchangeset.pm
+SHA1 0398e2e099032767334737907dd52272c289f7de lib/VCP/Source/cvsbk.pm
+SHA1 f6db0d749a88e786d8aff8b56ed2eaf5d745bc66 t/0use.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.4 (FreeBSD)
+
+iD8DBQFBJgljk1XldlEkA5YRAhDMAJ9QkBIPukGtkveT5yOGP5OMTrqZRACfelrF
+9ylR3IE6uZhhCnPJY8Ri7j4=
+=X2Kp
+-----END PGP SIGNATURE-----
