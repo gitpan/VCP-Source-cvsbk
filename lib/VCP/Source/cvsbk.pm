@@ -22,7 +22,7 @@ L<VCP::Filter::changeset> plugin
 
 @ISA = qw( VCP::Source::cvs );
 use strict ;
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 use Carp ;
 use VCP::Source::cvs;
@@ -40,7 +40,7 @@ sub _create_rev {
     $changeset = 0 if $comment eq "Initial revision\n";
 
     die "no changeset info in ".$r->as_string." comment was ".$comment
-	unless $changeset;
+	unless defined $changeset;
 
     $changeset =~ s/\.//g;
 

@@ -1,5 +1,5 @@
 name: VCP-Source-cvsbk
-version: 0.10
+version: 0.11
 abstract: VCP source driver for bk exported cvs
 author: Chia-liang Kao <clkao@clkao.org>
 license: perl

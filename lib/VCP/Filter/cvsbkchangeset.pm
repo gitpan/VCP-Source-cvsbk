@@ -20,7 +20,7 @@ driver gives that for initial revisions.
 =cut
 
 @ISA = qw( VCP::Filter );
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 use strict ;
 use VCP::Logger qw( pr_doing );
@@ -53,8 +53,12 @@ sub handle_rev {
    my $self = shift;
    my ($r) = @_;
 
-   $self->dest->handle_rev( $r ), return
-       if $r->is_base_rev;
+   if ($r->is_base_rev) {
+       $r->name eq 'ChangeSet' ?
+	   pr_doing # dummy
+	 : $self->dest->handle_rev ($r);
+       return;
+   }
 
    my $change_id = $r->change_id;
 
